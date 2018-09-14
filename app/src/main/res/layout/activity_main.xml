@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutTopRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textEnterNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxLength="26"
+                android:textColor="#0027ff"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/blue_button"
+                android:text="@string/buttonDelete"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/layoutDialPad"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/layoutDialPadTopRow"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnDial1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonOne"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial2"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonTwo"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonThree"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layoutDialPadSecondRow"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnDial4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonFour"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial5"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonFive"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial6"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonSix"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layoutDialPadThirdRow"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnDial7"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonSeven"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial8"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonEight"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial9"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonNine"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layoutDialPadFourthRow"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnDialStar"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonStar"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDial0"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonZero"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnDialHash"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/red_button"
+                    android:text="@string/buttonHash"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:typeface="monospace" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnPlaceCall"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_button"
+            android:text="@string/buttonPlaceCall"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
